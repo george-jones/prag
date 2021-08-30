@@ -1,0 +1,68 @@
+<mapgen gamebase="C:\Program Files\Activision\Call of Duty 4 - Modern Warfare" dest="map_source">
+	<!-- skybox, should be probably same size as terrain, but taller -->
+	<skybox>
+		<size x="5200" y="5200" z="1000" />
+		<texture txt="sky_mp_convoy_night" x_scale="256" y_scale="256" />
+	</skybox>
+	
+	<!-- size of terrain, should be larger than playable area -->
+	<terrain keep="0" u="16" v="16">
+		<size x="5000" y="5000" z="200" />
+		<playable x="4500" y="4500" />
+		<texture txt="ch_ground_road_dirt01" x_scale="1024" y_scale="1024" />
+	</terrain>
+	
+	<!-- coloration patch darkens up areas of the roads and ground for some variety -->
+	<colorpatch u="16" v="16" darkest="32" lightest="255">
+		<size x="5500" y="5500" />
+	</colorpatch>	
+	
+	<!-- roads that crisscross the area.  size must be smaller than terrain -->
+	<roads max_area="900000" keep="1">
+		<texture name="large" txt="ch_asphalt01" x_scale="2048" y_scale="1024"/>
+		<texture name="small" txt="ch_ground_road_dirt01" x_scale="1024" y_scale="1024" />
+		<entities>
+			<entity model="prefabs/mp_destructibles/vehicle_80s_sedan1_silv_destructible.map" class_name="misc_prefab" />			
+		</entities>
+	</roads>
+	
+	<!-- outer fence -->
+	<fence height="160" width="2" depth="12">
+		<texture txt="me_plaster_brown" x_scale="512" y_scale="512" />
+	</fence>
+	
+	<!-- stuff to go inside areas divided by roads -->
+	<areas keep_terrain="1">
+		<!-- areas that need will fill in their polygon with stuff and cover the ground -->		
+		<groundless min_area="60000" keep_terrain="1">
+			<buildings max_floors="3" story_height="128" wall_width="8" floor_height="6" door_height="110" door_width="60" stairwell_width="50" stairwell_length="128">
+				<texture name="interior" txt="office_whitewall_01" x_scale="128" y_scale="128" />
+				<texture name="exterior" txt="me_plaster_brown" x_scale="512" y_scale="512" />
+			</buildings>
+		</groundless>		
+		<!-- areas that expect the ground to be fully formed and will just put stuff on top of it -->
+		<grounded>
+			<!--		
+			<fence height="80" width="2" depth="12">
+				<texture txt="me_pinewood" x_scale="128" y_scale="256" />
+			</fence>
+			-->
+			<entities>
+				<entity model="prefabs/misc_models/foliage_tree_river_birch_xl_a.map" class_name="misc_prefab" />
+			</entities>
+		</grounded>
+	</areas>
+	
+	<!-- basic text files that don't need much but the name of the map -->
+	<templates>
+		<template src="templates\cod4\gsc.ptf" dest="raw\maps\mp\$PRAG_NAME$.gsc" />
+		<template src="templates\cod4\csv.ptf" dest="raw\maps\$PRAG_NAME$.csv" />
+		<template src="templates\cod4\csv2.ptf" dest="zone_source\$PRAG_NAME$.csv" />
+		<template src="templates\cod4\csv2_load.ptf" dest="zone_source\$PRAG_NAME$_load.csv" />
+	</templates>
+	
+	<!-- commands to run to compile, package, etc the map -->	
+	<!-- commands>
+		<command exec="cod4compile.bat $PRAG_NAME$" />
+	</commands -->
+</mapgen>

@@ -1,0 +1,267 @@
+iwmap 4
+// entity 0
+{
+"_color" "0.95 0.95 1.000000"
+"sundirection" "-35 195 0"
+"suncolor" "0.99 0.98 0.86"
+"sunlight" "1.6"
+"ambient" ".20"
+"sundiffusecolor" "0.94 0.94 1.000000"
+"diffusefraction" ".55"
+"northyaw" "90"
+"classname" "worldspawn"
+{
+"origin" "0 0 0"
+"model" "prefabs/misc_models/foliage_dead_pine_lg.map"
+"classname" "misc_prefab"
+"angles" "0 0 0"
+}
+{
+"origin" "300 0 0"
+"model" "prefabs/misc_models/foliage_dead_pine_med.map"
+"classname" "misc_prefab"
+"angles" "0 0 0"
+}
+{
+"origin" "600 0 0"
+"model" "prefabs/misc_models/foliage_dead_pine_sm.map"
+"classname" "misc_prefab"
+"angles" "0 0 0"
+}
+{
+"origin" "900 0 0"
+"model" "prefabs/misc_models/foliage_dead_pine_xl.map"
+"classname" "misc_prefab"
+"angles" "0 0 0"
+}
+{
+"origin" "1200 0 0"
+"model" "prefabs/misc_models/foliage_red_pine_lg.map"
+"classname" "misc_prefab"
+"angles" "0 0 0"
+}
+{
+"origin" "1500 0 0"
+"model" "prefabs/misc_models/foliage_red_pine_log_lg.map"
+"classname" "misc_prefab"
+"angles" "0 0 0"
+}
+{
+"origin" "1800 0 0"
+"model" "prefabs/misc_models/foliage_red_pine_log_med.map"
+"classname" "misc_prefab"
+"angles" "0 0 0"
+}
+{
+"origin" "2100 0 0"
+"model" "prefabs/misc_models/foliage_red_pine_med.map"
+"classname" "misc_prefab"
+"angles" "0 0 0"
+}
+{
+"origin" "2400 0 0"
+"model" "prefabs/misc_models/foliage_red_pine_sm.map"
+"classname" "misc_prefab"
+"angles" "0 0 0"
+}
+{
+"origin" "2700 0 0"
+"model" "prefabs/misc_models/foliage_red_pine_stump_lg.map"
+"classname" "misc_prefab"
+"angles" "0 0 0"
+}
+{
+"origin" "3000 0 0"
+"model" "prefabs/misc_models/foliage_red_pine_stump_lg_nomantle.map"
+"classname" "misc_prefab"
+"angles" "0 0 0"
+}
+{
+"origin" "3300 0 0"
+"model" "prefabs/misc_models/foliage_red_pine_stump_sm.map"
+"classname" "misc_prefab"
+"angles" "0 0 0"
+}
+{
+"origin" "3600 0 0"
+"model" "prefabs/misc_models/foliage_red_pine_stump_xl.map"
+"classname" "misc_prefab"
+"angles" "0 0 0"
+}
+{
+"origin" "3900 0 0"
+"model" "prefabs/misc_models/foliage_red_pine_xl.map"
+"classname" "misc_prefab"
+"angles" "0 0 0"
+}
+{
+"origin" "4200 0 0"
+"model" "prefabs/misc_models/foliage_red_pine_xxl.map"
+"classname" "misc_prefab"
+"angles" "0 0 0"
+}
+{
+"origin" "4500 0 0"
+"model" "prefabs/misc_models/foliage_tree_destoyed_trunk_a.map"
+"classname" "misc_prefab"
+"angles" "0 0 0"
+}
+{
+"origin" "4800 0 0"
+"model" "prefabs/misc_models/foliage_tree_destoyed_trunk_b.map"
+"classname" "misc_prefab"
+"angles" "0 0 0"
+}
+{
+"origin" "5100 0 0"
+"model" "prefabs/misc_models/foliage_tree_destroyed_fallen_log_a.map"
+"classname" "misc_prefab"
+"angles" "0 0 0"
+}
+{
+"origin" "5400 0 0"
+"model" "prefabs/misc_models/foliage_tree_destroyed_stump_a.map"
+"classname" "misc_prefab"
+"angles" "0 0 0"
+}
+{
+"origin" "5700 0 0"
+"model" "prefabs/misc_models/foliage_tree_destroyed_stump_b.map"
+"classname" "misc_prefab"
+"angles" "0 0 0"
+}
+{
+"origin" "6000 0 0"
+"model" "prefabs/misc_models/foliage_tree_destroyed_tree_a.map"
+"classname" "misc_prefab"
+"angles" "0 0 0"
+}
+{
+"origin" "6300 0 0"
+"model" "prefabs/misc_models/foliage_tree_destroyed_tree_b.map"
+"classname" "misc_prefab"
+"angles" "0 0 0"
+}
+{
+"origin" "6600 0 0"
+"model" "prefabs/misc_models/foliage_tree_grey_oak_lg_a.map"
+"classname" "misc_prefab"
+"angles" "0 0 0"
+}
+{
+"origin" "6900 0 0"
+"model" "prefabs/misc_models/foliage_tree_grey_oak_med_a.map"
+"classname" "misc_prefab"
+"angles" "0 0 0"
+}
+{
+"origin" "7200 0 0"
+"model" "prefabs/misc_models/foliage_tree_grey_oak_sm_a.map"
+"classname" "misc_prefab"
+"angles" "0 0 0"
+}
+{
+"origin" "7500 0 0"
+"model" "prefabs/misc_models/foliage_tree_grey_oak_sm_ts.map"
+"classname" "misc_prefab"
+"angles" "0 0 0"
+}
+{
+"origin" "7800 0 0"
+"model" "prefabs/misc_models/foliage_tree_grey_oak_xl_a.map"
+"classname" "misc_prefab"
+"angles" "0 0 0"
+}
+{
+"origin" "8100 0 0"
+"model" "prefabs/misc_models/foliage_tree_palm_01.map"
+"classname" "misc_prefab"
+"angles" "0 0 0"
+}
+{
+"origin" "8400 0 0"
+"model" "prefabs/misc_models/foliage_tree_palm_bushy_1.map"
+"classname" "misc_prefab"
+"angles" "0 0 0"
+}
+{
+"origin" "8700 0 0"
+"model" "prefabs/misc_models/foliage_tree_palm_bushy_2.map"
+"classname" "misc_prefab"
+"angles" "0 0 0"
+}
+{
+"origin" "9000 0 0"
+"model" "prefabs/misc_models/foliage_tree_palm_bushy_3.map"
+"classname" "misc_prefab"
+"angles" "0 0 0"
+}
+{
+"origin" "9300 0 0"
+"model" "prefabs/misc_models/foliage_tree_palm_bushy_3a.map"
+"classname" "misc_prefab"
+"angles" "0 0 0"
+}
+{
+"origin" "9600 0 0"
+"model" "prefabs/misc_models/foliage_tree_palm_med_1.map"
+"classname" "misc_prefab"
+"angles" "0 0 0"
+}
+{
+"origin" "9900 0 0"
+"model" "prefabs/misc_models/foliage_tree_palm_med_2.map"
+"classname" "misc_prefab"
+"angles" "0 0 0"
+}
+{
+"origin" "10200 0 0"
+"model" "prefabs/misc_models/foliage_tree_palm_tall_1.map"
+"classname" "misc_prefab"
+"angles" "0 0 0"
+}
+{
+"origin" "10500 0 0"
+"model" "prefabs/misc_models/foliage_tree_palm_tall_2.map"
+"classname" "misc_prefab"
+"angles" "0 0 0"
+}
+{
+"origin" "10800 0 0"
+"model" "prefabs/misc_models/foliage_tree_palm_tall_3.map"
+"classname" "misc_prefab"
+"angles" "0 0 0"
+}
+{
+"origin" "11100 0 0"
+"model" "prefabs/misc_models/foliage_tree_pine_lg.map"
+"classname" "misc_prefab"
+"angles" "0 0 0"
+}
+{
+"origin" "11400 0 0"
+"model" "prefabs/misc_models/foliage_tree_pine_sm.map"
+"classname" "misc_prefab"
+"angles" "0 0 0"
+}
+{
+"origin" "11700 0 0"
+"model" "prefabs/misc_models/foliage_tree_pine_xl.map"
+"classname" "misc_prefab"
+"angles" "0 0 0"
+}
+{
+"origin" "12000 0 0"
+"model" "prefabs/misc_models/foliage_tree_river_birch_lg_a.map"
+"classname" "misc_prefab"
+"angles" "0 0 0"
+}
+{
+"origin" "12300 0 0"
+"model" "prefabs/misc_models/foliage_tree_river_birch_lg_b.map"
+"classname" "misc_prefab"
+"angles" "0 0 0"
+}
+{
+"origin" "12600 0 0"
+"model" "prefabs/misc_models/foliage_tree_river_birch_xl_a.map

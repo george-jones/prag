@@ -1,0 +1,51 @@
+<mapgen>
+
+	<!-- skybox, should be probably same size as terrain, but taller -->
+	<skybox>
+		<size x="4200" y="4200" z="1000" />
+		<texture txt="sky_libya" x_scale="256" y_scale="256" />
+	</skybox>	
+		
+	<!-- size of terrain, should be larger than playable area -->
+	<terrain keep="0" u="16" v="16">
+		<size x="4000" y="4000" z="200" />
+		<playable x="3500" y="3500" />
+		<texture txt="duhoc_dirt_ground1" x_scale="1024" y_scale="1024" type="uniform" />
+	</terrain>
+	
+	<!-- coloration patch darkens up areas of the roads and ground for some variety, should be larger than terrain -->	
+	<colorpatch u="16" v="16" darkest="48" lightest="255">
+		<size x="4500" y="4500" />
+	</colorpatch>
+	
+	<!-- roads that crisscross the area.  size must be smaller than terrain -->
+	<roads max_area="900000" keep="1">
+		<texture name="large" txt="duhoc_asphalt_road" x_scale="2048" y_scale="1024" />
+		<texture name="small" txt="duhoc_dirt_ground1" x_scale="1024" y_scale="1024" />
+	</roads>
+	
+	<!-- outer fence -->
+	<fence height="160" width="2" depth="12">
+		<texture txt="dawnville2_wood_fence02" x_scale="512" y_scale="512" />
+	</fence>
+	
+	<!-- stuff to go inside areas divided by roads -->
+	<areas keep_terrain="1">
+		<!-- areas that need will fill in their polygon with stuff and cover the ground -->		
+		<groundless min_area="60000" keep_terrain="1">
+			<buildings max_floors="3" story_height="128" wall_width="8" floor_height="6" door_height="110" door_width="60" stairwell_width="50" stairwell_length="128">
+				<texture name="interior" txt="egypt_largedome1" x_scale="128" y_scale="128" />
+				<texture name="exterior" txt="egypt_plaster_exteriorwall02" x_scale="512" y_scale="512" />
+			</buildings>
+		</groundless>		
+		<!-- areas that expect the ground to be fully formed and will just put stuff on top of it -->
+		<grounded>
+			<!--
+			<fence height="82" width="2" depth="12">
+				<texture txt="egypt_wood_top" x_scale="128" y_scale="256" />
+			</fence>
+			-->
+		</grounded>
+	</areas>
+	
+</mapgen>
